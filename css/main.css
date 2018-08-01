@@ -18,7 +18,7 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-
+@import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css');
 /* =============================================================================
 2. General styles
 ============================================================================= */
@@ -541,7 +541,7 @@ ul.social-links li a:hover {
 }
 
 ul.social-links li a i {
-  font-size: 14px;
+  font-size: 18px;
   line-height: 28px;
 }
 
@@ -1385,7 +1385,7 @@ ul.social-links li:last-child a {
 .contact-info-block .ci-icon {
   position: absolute;
   top: 50%;
-  margin-top: -15px;
+  margin-top: -10px;
 }
 
 .ci-text {
