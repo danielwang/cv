@@ -332,6 +332,7 @@ textarea.form-control, textarea.form-control:focus {
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
+  -webkit-overflow-scrolling: touch;
 }
 
 .pt-wrapper.scroll-auto {
