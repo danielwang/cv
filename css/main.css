@@ -18,7 +18,6 @@
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 
-@import url('https://use.fontawesome.com/releases/v5.2.0/css/all.css');
 /* =============================================================================
 2. General styles
 ============================================================================= */
@@ -794,7 +793,7 @@ ul.social-links li:last-child a {
   margin: 0;
   background: #FFF8E6;
   padding: 20px 10px 15px;
-  border-radius: .5rem;
+  border-radius: .125rem;
 }
 
 .fun-fact-block.gray-bg {
@@ -963,8 +962,8 @@ ul.social-links li:last-child a {
 
 .event-description {
   color: #B29A67;
-  margin: 0 0 4px;
-  font-size: 12px;
+  margin: 0 0 6px;
+  font-size: 14px;
   font-weight: 300;
   line-height: 1.45em;
 }
@@ -1021,8 +1020,9 @@ ul.social-links li:last-child a {
 }
 
 /*Skill 1*/
+
 .skill-percentage.skill-1 {
-  width: 88%;
+  width: 99%;
 }
 /*Skill 2*/
 .skill-percentage.skill-2 {
