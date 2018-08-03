@@ -10,13 +10,13 @@
 
     // /Hide Mobile menu
 
-
     $(document).ready(function(){
 
         // Mobile menu
         $('.menu-toggle').click(function() {
             $('.site-nav').toggleClass('mobile-menu-hide');
         });
+        $('[data-toggle="tooltip"]').tooltip();
 
         // // Testimonials Slider
         // $(".testimonials.owl-carousel").owlCarousel({
