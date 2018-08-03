@@ -10,14 +10,14 @@
 
 ============================================================================= */
 
-
 /* =============================================================================
 1. Fonts
 ============================================================================= */
+
 /* Google fonts */
+
 @import url('https://fonts.googleapis.com/css?family=Oswald:300,400,700');
 @import url('https://fonts.googleapis.com/css?family=Raleway');
-
 /* =============================================================================
 2. General styles
 ============================================================================= */
@@ -25,6 +25,7 @@
 html {
   height: 100%;
 }
+
 body {
   font-family: 'Raleway', Helvetica, sans-serif;
   color: #402E32;
@@ -87,6 +88,7 @@ img {
 }
 
 /* Buttons */
+
 input[type=submit], input[type=button], button, a.button {
   display: inline-block;
   position: relative;
@@ -103,6 +105,7 @@ input[type=submit], input[type=button], button, a.button {
   border-radius: 0;
   font-family: 'PT Sans', Helvetica, sans-serif;
 }
+
 .btn {
   border-radius: 0;
 }
@@ -111,22 +114,21 @@ input[type=submit]:hover, input[type=submit]:focus, input[type=button]:focus, bu
   color: #fff;
   background-color: #ffcd38;
 }
+
 /* /Buttons */
 
 /* Contact form */
+
 .form-group {
   position: relative;
   margin: 0 0 20px;
 }
-.form-control,
-.form-control:focus {
+
+.form-control, .form-control:focus {
   height: 42px;
 }
 
-.form-control,
-.form-control:focus,
-.has-error .form-control,
-.has-error .form-control:focus {
+.form-control, .form-control:focus, .has-error .form-control, .has-error .form-control:focus {
   position: relative;
   border: 1px solid #dfdfdf;
   border-radius: 0;
@@ -149,7 +151,7 @@ textarea.form-control, textarea.form-control:focus {
   height: auto;
 }
 
-.form-control + .form-control-border {
+.form-control+.form-control-border {
   content: "";
   position: absolute;
   z-index: -1;
@@ -166,13 +168,13 @@ textarea.form-control, textarea.form-control:focus {
   transition-timing-function: ease-out;
 }
 
-.form-control:focus + .form-control-border {
+.form-control:focus+.form-control-border {
   left: 0;
   right: 0;
   z-index: 1;
 }
 
-.has-error .form-control + .form-control-border {
+.has-error .form-control+.form-control-border {
   background: #ff4e4e;
 }
 
@@ -183,11 +185,12 @@ textarea.form-control, textarea.form-control:focus {
   color: #d3d3d3;
 }
 
-.form-control:focus + .form-control-icon {
+.form-control:focus+.form-control-icon {
   color: #ffcd38;
 }
 
 /* Placeholders */
+
 .form-control::-moz-placeholder {
   color: #adadac;
   opacity: 1;
@@ -200,6 +203,7 @@ textarea.form-control, textarea.form-control:focus {
 .form-control::-webkit-input-placeholder {
   color: #adadac;
 }
+
 /* /Placeholders */
 
 .form-group .help-block {
@@ -223,9 +227,11 @@ textarea.form-control, textarea.form-control:focus {
   border-bottom: 10px solid #ff4e4e;
   border-right: 10px solid transparent;
 }
+
 .form-group .help-block:empty {
   display: none;
 }
+
 /* /Contact form */
 
 .no-padding {
@@ -239,7 +245,11 @@ textarea.form-control, textarea.form-control:focus {
 /* =============================================================================
 3. Page loadig animation
 ============================================================================= */
-.no-js .preloader { display: none;  }
+
+.no-js .preloader {
+  display: none;
+}
+
 .preloader {
   position: fixed;
   left: 0px;
@@ -296,8 +306,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 @-webkit-keyframes bounce {
-  0%,
-  100% {
+  0%, 100% {
     -webkit-transform: scale(0.0);
   }
   50% {
@@ -306,20 +315,20 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 @keyframes bounce {
-  0%,
-  100% {
+  0%, 100% {
     transform: scale(0.0);
     -webkit-transform: scale(0.0);
-  } 50% {
+  }
+  50% {
     transform: scale(1.0);
     -webkit-transform: scale(1.0);
   }
 }
 
-
 /* =============================================================================
 4. Subpages changer
 ============================================================================= */
+
 .pt-wrapper {
   position: relative;
   width: 100%;
@@ -377,8 +386,7 @@ textarea.form-control, textarea.form-control:focus {
   opacity: 0;
 }
 
-.pt-page .portfolio-grid,
-.pt-page .blog-masonry {
+.pt-page .portfolio-grid, .pt-page .blog-masonry {
   display: none;
 }
 
@@ -387,21 +395,18 @@ textarea.form-control, textarea.form-control:focus {
   width: 100%;
 }
 
-.pt-page-current,
-.no-js .pt-page {
+.pt-page-current, .no-js .pt-page {
   visibility: visible;
   z-index: 1;
   opacity: 1;
   height: auto;
 }
 
-.pt-page.pt-page-current .portfolio-grid,
-.pt-page.pt-page-current .blog-masonry {
+.pt-page.pt-page-current .portfolio-grid, .pt-page.pt-page-current .blog-masonry {
   display: block;
 }
 
-.pt-page-current *,
-.no-js .pt-page * {
+.pt-page-current *, .no-js .pt-page * {
   height: auto;
   opacity: 1;
 }
@@ -411,6 +416,7 @@ textarea.form-control, textarea.form-control:focus {
 }
 
 /*No Animation Support Message Style*/
+
 .pt-message {
   display: none;
   position: absolute;
@@ -440,11 +446,13 @@ textarea.form-control, textarea.form-control:focus {
   -moz-perspective: 1500px;
   perspective: 1500px;
 }
+
 /* /Page changer */
 
 /* =============================================================================
 5. Site header (sidebar)
 ============================================================================= */
+
 .header {
   position: fixed;
   width: 25%;
@@ -482,7 +490,7 @@ textarea.form-control, textarea.form-control:focus {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0,0,0,0.08)
+  background-color: rgba(0, 0, 0, 0.08)
 }
 
 .site-title-block {
@@ -498,7 +506,7 @@ textarea.form-control, textarea.form-control:focus {
   font-weight: 500;
   line-height: 1.1em;
   margin: 15px 0 0 0;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 p.site-description {
@@ -507,10 +515,11 @@ p.site-description {
   font-weight: 300;
   font-family: Oswald, Helvetica, sans-serif;
   margin: 10px 0;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 /* Social links */
+
 ul.social-links {
   display: inline-block;
   float: right;
@@ -531,13 +540,11 @@ ul.social-links li a {
   width: 28px;
   height: 28px;
   color: #888;
-  background-color: #eee;
   text-align: center;
 }
 
 ul.social-links li a:hover {
-  color: #fff;
-  background-color: #ffcd38;
+  color: #ffcd38;
 }
 
 ul.social-links li a i {
@@ -556,6 +563,7 @@ ul.social-links li a:hover {
 ul.social-links li:last-child a {
   margin-right: 0;
 }
+
 /* /Social links */
 
 .menu-toggle {
@@ -579,26 +587,28 @@ ul.social-links li:last-child a {
 
 /* ----- Header ----- */
 
-
 /* =============================================================================
 6. Site content
 ============================================================================= */
+
 .site-main {
   height: 100%;
   margin-left: 25%;
   position: relative;
   background-color: #fff;
   border-left: 5px solid #B4AA99;
-  -webkit-box-shadow: -10px 0px 20px 0px rgba(0,0,0,0.04);
-  -moz-box-shadow: -10px 0px 20px 0px rgba(0,0,0,0.04);
-  box-shadow: -10px 0px 20px 0px rgba(0,0,0,0.04);
+  -webkit-box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, 0.04);
+  -moz-box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, 0.04);
+  box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, 0.04);
 }
 
 /* Main menu */
+
 .site-nav {
   display: block;
   padding: 30px 70px;
 }
+
 .site-main-menu {
   display: inline-block;
   padding: 0;
@@ -616,8 +626,7 @@ ul.social-links li:last-child a {
   padding-left: 0;
 }
 
-.site-main-menu li a,
-.site-main-menu li a:hover {
+.site-main-menu li a, .site-main-menu li a:hover {
   color: #222;
   font-size: 15px;
   font-weight: 500;
@@ -626,8 +635,7 @@ ul.social-links li:last-child a {
   outline: none;
 }
 
-.site-main-menu li a:hover:after,
-.site-main-menu li.active a:after {
+.site-main-menu li a:hover:after, .site-main-menu li.active a:after {
   display: block;
   position: absolute;
   left: 0;
@@ -643,9 +651,11 @@ ul.social-links li:last-child a {
 .site-main-menu li.active a:after {
   background-color: #ffcd38;
 }
+
 /* /Main menu */
 
 /* Section title */
+
 .section-title-block {
   margin-bottom: 40px;
 }
@@ -659,7 +669,7 @@ ul.social-links li:last-child a {
   color: #fff;
   line-height: 1.1em;
   font-weight: 500;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
 .section-title:after {
@@ -671,17 +681,17 @@ ul.social-links li:last-child a {
   left: -5px;
   content: "";
   border: 1px solid #ebbd34;
-  transform: skew(0deg,65deg);
-  -ms-transform: skew(0deg,65deg);
-  -webkit-transform: skew(0deg,65deg);
-  -o-transform: skew(0deg,65deg);
-  -moz-transform: skew(0deg,65deg);
+  transform: skew(0deg, 65deg);
+  -ms-transform: skew(0deg, 65deg);
+  -webkit-transform: skew(0deg, 65deg);
+  -o-transform: skew(0deg, 65deg);
+  -moz-transform: skew(0deg, 65deg);
   background: #ebbd34;
 }
 
 .section-description {
   display: inline-block;
-  margin:  0 0 0 15px;
+  margin: 0 0 0 15px;
   color: #888;
   font-size: 14px;
   font-weight: 200;
@@ -702,7 +712,6 @@ ul.social-links li:last-child a {
   background-color: #ffcd38;
 }
 
-
 /* =============================================================================
 7. Subpages
 ============================================================================= */
@@ -710,13 +719,15 @@ ul.social-links li:last-child a {
 /* =======================================
 7.1. About Me subpage
 ======================================= */
-/* About me General info */
-.general-info {
 
-}
+/* About me General info */
+
+.general-info {}
+
 /* /About me General info */
 
 /* About me list */
+
 .info-list {
   list-style: none;
   margin: 0;
@@ -747,9 +758,11 @@ ul.social-links li:last-child a {
   font-family: 'PT Sans';
   min-width: 250px;
 }
+
 /* /About me list */
 
 /* Services */
+
 .service-block {
   text-align: center;
 }
@@ -765,9 +778,11 @@ ul.social-links li:last-child a {
   color: #ffcd38;
   margin: 0 0 18px;
 }
+
 /* /Services */
 
 /* Clients */
+
 .client_block {
   text-align: center;
   padding: 5px 0;
@@ -783,9 +798,11 @@ ul.social-links li:last-child a {
 .client_block img {
   max-width: 80px;
 }
+
 /* /Clients */
 
 /* Fun Facts */
+
 .fun-fact-block {
   position: relative;
   text-align: center;
@@ -818,9 +835,11 @@ ul.social-links li:last-child a {
   margin: 10px 0;
   color: #CB9F00;
 }
+
 /* /Fun Facts */
 
 /* Testimonials */
+
 .testimonial-item {
   width: 100%;
   margin: 0 auto;
@@ -901,13 +920,15 @@ ul.social-links li:last-child a {
   font-style: italic;
   font-weight: lighter
 }
-/* /Testimonials */
 
+/* /Testimonials */
 
 /* =======================================
 7.2. Resume subpage
 ======================================= */
+
 /* Timeline  */
+
 .timeline {
   position: relative;
   border-left: 1px solid #B29A67;
@@ -925,7 +946,7 @@ ul.social-links li:last-child a {
   padding-bottom: 0px;
 }
 
-.timeline-event > * {
+.timeline-event>* {
   display: block;
 }
 
@@ -949,11 +970,11 @@ ul.social-links li:last-child a {
   bottom: 3px;
   left: -3px;
   content: "";
-  transform: skew(0deg,65deg);
-  -ms-transform: skew(0deg,65deg);
-  -webkit-transform: skew(0deg,65deg);
-  -o-transform: skew(0deg,65deg);
-  -moz-transform: skew(0deg,65deg);
+  transform: skew(0deg, 65deg);
+  -ms-transform: skew(0deg, 65deg);
+  -webkit-transform: skew(0deg, 65deg);
+  -o-transform: skew(0deg, 65deg);
+  -moz-transform: skew(0deg, 65deg);
   background: #B29A67;
 }
 
@@ -974,6 +995,7 @@ ul.social-links li:last-child a {
 }
 
 /* Skills */
+
 .skills-info {
   margin-bottom: 30px;
 }
@@ -1008,7 +1030,9 @@ ul.social-links li:last-child a {
   height: 10px;
   padding: 0;
 }
+
 /* Animate skills on subpage load */
+
 .pt-page .skill-percentage {
   -webkit-transition: all 2.5s ease-in-out;
   -moz-transition: all 2.5s ease-in-out;
@@ -1016,6 +1040,7 @@ ul.social-links li:last-child a {
   -ms-transition: all 2.5s ease-in-out;
   transition: all 2.5s ease-in-out;
 }
+
 .js .pt-page:not(.pt-page-current) .skill-percentage {
   width: 0;
 }
@@ -1025,40 +1050,55 @@ ul.social-links li:last-child a {
 .skill-percentage.skill-1 {
   width: 99%;
 }
+
 /*Skill 2*/
+
 .skill-percentage.skill-2 {
   width: 75%;
 }
+
 /*Skill 3*/
+
 .skill-percentage.skill-3 {
   width: 60%;
 }
+
 /*Skill 4*/
+
 .skill-percentage.skill-4 {
   width: 95%;
 }
+
 /*Skill 5*/
+
 .skill-percentage.skill-5 {
   width: 85%;
 }
+
 /*Skill 6*/
+
 .skill-percentage.skill-6 {
   width: 72%;
 }
+
 /*Skill 7*/
+
 .skill-percentage.skill-7 {
   width: 60%;
 }
+
 /*Skill 8*/
+
 .skill-percentage.skill-8 {
   width: 77%;
 }
-/* Skills */
 
+/* Skills */
 
 /* =======================================
 7.3. Portfolio subpage
 ======================================= */
+
 .page-ajax-loaded {
   display: none;
   position: absolute;
@@ -1094,12 +1134,12 @@ ul.social-links li:last-child a {
   margin: 0 0 2em;
   text-align: center;
 }
+
 .portfolio-filters li {
   display: inline-block;
 }
 
-.portfolio-filters li a,
-.portfolio-filters li a:hover {
+.portfolio-filters li a, .portfolio-filters li a:hover {
   color: #888;
   text-decoration: none;
 }
@@ -1108,13 +1148,13 @@ ul.social-links li:last-child a {
   background-color: #eee;
 }
 
-.portfolio-filters li.active a,
-.portfolio-filters li.active a:hover {
+.portfolio-filters li.active a, .portfolio-filters li.active a:hover {
   background-color: #ffcd38;
   color: #fff;
 }
 
 /* Direction-Aware Hover Effect */
+
 .portfolio-grid figure a div {
   top: 0px;
   left: -100%;
@@ -1136,8 +1176,7 @@ ul.social-links li:last-child a {
   position: relative;
 }
 
-.portfolio-grid figure a,
-.portfolio-rid figure a img {
+.portfolio-grid figure a, .portfolio-rid figure a img {
   display: block;
   position: relative;
 }
@@ -1151,18 +1190,20 @@ ul.social-links li:last-child a {
 .portfolio-grid figure a div {
   position: absolute;
   background: #4f565e;
-  background: rgba(79,86,94,0.7);
+  background: rgba(79, 86, 94, 0.7);
   width: 100%;
   height: 100%;
   color: #888;
 }
+
 .portfolio-grid figure a div h5 {
   display: inline-block;
   font-size: 1rem;
   margin: 10px 0;
   color: #fff;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
+
 .portfolio-grid figure a div h5:after {
   display: block;
   content: '';
@@ -1171,42 +1212,49 @@ ul.social-links li:last-child a {
   margin: 0 auto;
   background-color: #ffcd38;
 }
+
 .portfolio-grid figure a div small {
   color: #eee;
   position: absolute;
   bottom: 10px;
   left: 20px;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
+
 .portfolio-grid figure a div i {
   color: #eee;
   position: absolute;
   bottom: 14px;
   right: 20px;
   margin: 0;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
+
 .portfolio-grid figure a div span {
   display: block;
   padding: 10px 0;
   text-transform: uppercase;
   font-weight: normal;
-  color: rgba(255,255,255,0.9);
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
-  border-bottom: 1px solid rgba(255,255,255,0.5);
-  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
-  -moz-box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
-  box-shadow: 0 1px 0 rgba(0,0,0,0.1), 0 -10px 0 rgba(255,255,255,0.3);
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 -10px 0 rgba(255, 255, 255, 0.3);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 -10px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1), 0 -10px 0 rgba(255, 255, 255, 0.3);
 }
+
 /* End of Direction-Aware Hover Effect */
 
 /* =======================================
 7.4. Blog subpage
 ======================================= */
+
 /* Blog */
+
 .blog-masonry {
   margin: 0 -1em;
 }
+
 .blog-masonry .item {
   width: 50%;
   float: left;
@@ -1219,15 +1267,15 @@ ul.social-links li:last-child a {
   padding: 0;
   background: #fff;
   text-align: center;
-  -webkit-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 1px 5px rgba(0,0,0,0.1);
-  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  -webkit-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
 }
 
 .blog-card:hover {
-  -webkit-box-shadow: 0 1px 15px rgba(0,0,0,0.11);
-  -moz-box-shadow: 0 1px 15px rgba(0,0,0,0.11);
-  box-shadow: 0 1px 15px rgba(0,0,0,0.11);
+  -webkit-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.11);
+  -moz-box-shadow: 0 1px 15px rgba(0, 0, 0, 0.11);
+  box-shadow: 0 1px 15px rgba(0, 0, 0, 0.11);
 }
 
 .blog-card .post-image {
@@ -1279,7 +1327,7 @@ ul.social-links li:last-child a {
 .blog-card .media-block a .mask {
   position: absolute;
   background: #4f565e;
-  background: rgba(79,86,94,0.6);
+  background: rgba(79, 86, 94, 0.6);
   display: inline-block;
   font-family: 'Pe-icon-7-stroke';
   speak: none;
@@ -1365,16 +1413,14 @@ ul.social-links li:last-child a {
   padding-right: 5px;
 }
 
-
 /* =======================================
 7.5. Contact subpage
 ======================================= */
+
 /* Contact info */
+
 .contact-info-block {
-  position: relative;
-  text-align: left;
-  width: 100%;
-  display: block;
+  display: flex;
   margin: 0;
   padding: 10px 10px 10px 0;
 }
@@ -1384,14 +1430,12 @@ ul.social-links li:last-child a {
 }
 
 .contact-info-block .ci-icon {
-  position: absolute;
-  top: 50%;
-  margin-top: -10px;
+  margin-top: 10px;
+  width: 1.5rem;
 }
 
 .ci-text {
-  position: relative;
-  padding-left: 50px;
+  margin-left: 25px;
 }
 
 .contact-info-block h5 {
@@ -1403,13 +1447,15 @@ ul.social-links li:last-child a {
   font-size: 30px;
   color: #888;
 }
-/* /Contact info */
 
+/* /Contact info */
 
 /* =============================================================================
 8. Sliders
 ============================================================================= */
+
 /* Testimonials Carousel */
+
 .testimonials.owl-carousel .owl-nav {
   position: absolute;
   text-align: right;
@@ -1421,22 +1467,19 @@ ul.social-links li:last-child a {
   margin-right: 3px;
 }
 
-.testimonials.owl-carousel .owl-nav .owl-prev,
-.testimonials.owl-carousel .owl-nav .owl-next {
+.testimonials.owl-carousel .owl-nav .owl-prev, .testimonials.owl-carousel .owl-nav .owl-next {
   display: inline-block;
   background-color: #eee;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
 }
 
-.testimonials.owl-carousel .owl-nav .owl-prev:hover,
-.testimonials.owl-carousel .owl-nav .owl-next:hover {
+.testimonials.owl-carousel .owl-nav .owl-prev:hover, .testimonials.owl-carousel .owl-nav .owl-next:hover {
   color: #fff;
   background-color: #ffcd38;
 }
 
-.testimonials.owl-carousel .owl-nav .owl-prev:before,
-.testimonials.owl-carousel .owl-nav .owl-next:before {
+.testimonials.owl-carousel .owl-nav .owl-prev:before, .testimonials.owl-carousel .owl-nav .owl-next:before {
   position: relative;
   margin: 2px;
   width: 22px;
@@ -1456,9 +1499,11 @@ ul.social-links li:last-child a {
 .testimonials.owl-carousel .owl-nav .owl-next:before {
   content: "\f105";
 }
+
 /* /Testimonials Carousel */
 
 /* Portfolio Carousel */
+
 .portfolio-page-carousel {
   overflow: hidden;
 }
@@ -1548,20 +1593,23 @@ ul.social-links li:last-child a {
   transition: opacity 200ms ease;
   border-radius: 30px;
 }
-/* Portfolio Carousel */
 
+/* Portfolio Carousel */
 
 /* =============================================================================
 9. Portfolio Full info page
 ============================================================================= */
+
 .portfolio-page-content {
   padding-bottom: 60px;
 }
+
 .portfolio-nav {
   float: right;
   margin-top: 20px;
   margin-bottom: 10px;
 }
+
 .portfolio-nav .portfolio-close-button a {
   display: block;
   height: 30px;
@@ -1598,9 +1646,7 @@ ul.social-links li:last-child a {
   max-width: 100%;
 }
 
-.portfolio-page-video,
-.portfolio-page-carousel,
-.portfolio-page-image {
+.portfolio-page-video, .portfolio-page-carousel, .portfolio-page-image {
   position: relative;
   width: 100%;
   margin-bottom: 20px;
@@ -1613,7 +1659,7 @@ ul.social-links li:last-child a {
 }
 
 .project-general-info li {
-  margin : 0 0 10px;
+  margin: 0 0 10px;
 }
 
 .project-general-info .fa {
@@ -1655,6 +1701,7 @@ ul.social-links li:last-child a {
 }
 
 /* Tags Block */
+
 .tags-block {
   margin: 25px 0 0;
 }
@@ -1676,16 +1723,18 @@ ul.social-links li:last-child a {
   padding: 2px 7px;
   background-color: #eee;
 }
+
 /* /Tags Block */
 
 /* =============================================================================
 10. Blog post page
 ============================================================================= */
+
 .blog-post-page {
   height: auto;
 }
 
-.blog-post-page  .page-wrapper {
+.blog-post-page .page-wrapper {
   position: relative;
 }
 
@@ -1700,31 +1749,29 @@ ul.social-links li:last-child a {
 }
 
 .blog-back-button:after {
-    display: block;
-    width: 5px;
-    height: 100%;
-    position: absolute;
-    bottom: 5px;
-    left: -5px;
-    content: "";
-    transform: skew(0deg,65deg);
-    -ms-transform: skew(0deg,65deg);
-    -webkit-transform: skew(0deg,65deg);
-    -o-transform: skew(0deg,65deg);
-    -moz-transform: skew(0deg,65deg);
-    background: #d9d9d9;
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
+  display: block;
+  width: 5px;
+  height: 100%;
+  position: absolute;
+  bottom: 5px;
+  left: -5px;
+  content: "";
+  transform: skew(0deg, 65deg);
+  -ms-transform: skew(0deg, 65deg);
+  -webkit-transform: skew(0deg, 65deg);
+  -o-transform: skew(0deg, 65deg);
+  -moz-transform: skew(0deg, 65deg);
+  background: #d9d9d9;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
 }
 
-.blog-back-button:hover,
-.blog-back-button:visited:hover {
+.blog-back-button:hover, .blog-back-button:visited:hover {
   color: #fff;
   background-color: #ffcd38;
 }
 
-.blog-back-button:hover:after,
-.blog-back-button:visited:hover:after {
+.blog-back-button:hover:after, .blog-back-button:visited:hover:after {
   background: #ebbd34;
 }
 
@@ -1776,7 +1823,7 @@ blockquote {
   margin-top: 30px;
 }
 
-.blog-post-content .post-comments > .media {
+.blog-post-content .post-comments>.media {
   margin-top: 0;
 }
 
@@ -1786,8 +1833,7 @@ blockquote {
   border: 2px solid #ddd;
 }
 
-.post-comments .media-footer,
-.post-comments .media-footer a {
+.post-comments .media-footer, .post-comments .media-footer a {
   color: #888;
   font-size: 12px;
   line-height: 1em;
@@ -1808,7 +1854,6 @@ blockquote {
   font-size: 12px;
 }
 
-
 /* =============================================================================
 11. Media Queries
 ============================================================================= */
@@ -1824,10 +1869,11 @@ blockquote {
 
 @media only screen and (max-width: 991px) {
   .mobile-visible {
-    display: block;
+    display: flex;
     visibility: visible;
+    align-items: center;
+    justify-content: center;
   }
-
   .header {
     position: fixed;
     width: 100%;
@@ -1836,12 +1882,10 @@ blockquote {
     background-color: #fff;
     z-index: 100;
   }
-
   .site-title-block {
     margin: 0 20px;
     text-align: left;
   }
-
   .site-title-block .site-title {
     display: inline-block;
     float: left;
@@ -1849,23 +1893,18 @@ blockquote {
     margin: 0;
     line-height: 50px;
   }
-
   .site-title-block .site-description {
     display: none;
   }
-
   .subpage-block {
     margin-bottom: 40px;
   }
-
   .my-photo {
     display: none;
   }
-
   .my-photo img {
     display: none;
   }
-
   .my-photo-small {
     display: block;
     width: 200px;
@@ -1873,14 +1912,12 @@ blockquote {
     border-radius: 50%;
     margin: 0 auto 40px;
   }
-
   .my-photo-small img {
     display: block;
     width: 100%;
     height: auto;
     border-radius: 50%;
   }
-
   .site-main {
     position: absolute;
     top: 50px;
@@ -1893,54 +1930,43 @@ blockquote {
     -moz-box-shadow: none;
     box-shadow: none;
   }
-
   .site-main-menu {
     text-align: center;
   }
-
   .section-title-block {
     margin-left: 0;
     margin-right: 0;
   }
-
   .section-title {
     display: inline-block;
     position: relative;
     margin-left: -20px;
     padding-left: 20px;
   }
-
   .section-title:after {
     display: none;
   }
-
   .section-title-block .section-description {
     display: none;
   }
-
   .site-title {
     color: #222;
     text-shadow: none;
   }
-
   p.site-description {
     color: #888;
     text-shadow: none;
   }
-
   .pt-wrapper {
     padding: 0;
     margin: 0;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-
   }
-
   .pt-page {
     padding: 15px 20px 60px;
   }
-
   .site-nav {
     display: block;
     width: 100%;
@@ -1952,41 +1978,35 @@ blockquote {
     z-index: 99;
     background-color: #fff;
     overflow: auto;
-    -webkit-box-shadow: -10px 0px 20px 0px rgba(0,0,0,0.1);
-    -moz-box-shadow: -10px 0px 20px 0px rgba(0,0,0,0.1);
-    box-shadow: -10px 0px 20px 0px rgba(0,0,0,0.1);
+    -webkit-box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: -10px 0px 20px 0px rgba(0, 0, 0, 0.1);
     -webkit-transition: all 0.66s ease-in-out;
     -moz-transition: all 0.66s ease-in-out;
     -o-transition: all 0.66s ease-in-out;
     -ms-transition: all 0.66s ease-in-out;
     transition: all 0.66s ease-in-out;
   }
-
   .site-nav .site-main-menu {
     display: block;
   }
-
   ul.social-links {
     display: block;
     text-align: center;
     float: none;
     margin: 15px 0;
   }
-
   ul.social-links li {
     float: none;
     display: inline-block;
   }
-
   .mobile-menu-hide {
     margin-top: -100%;
   }
-
   .site-main-menu li {
     display: block;
     padding: 10px 0;
   }
-
   .blog-post-content {
     margin: 0;
     padding-left: 20px;
@@ -2015,7 +2035,9 @@ blockquote {
 /* =============================================================================
 12. Updates
 ============================================================================= */
+
 /* v2.1 - 9 may 2017 */
+
 .g-recaptcha {
   margin-bottom: 20px;
 }
