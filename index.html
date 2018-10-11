@@ -12,11 +12,11 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"/>
 
-    <!-- <link rel="stylesheet" href="css/normalize.css"> <link rel="stylesheet" href="css/transition-animations.css"> <link rel="stylesheet" href="css/owl.carousel.css"> <link rel="stylesheet" href="css/magnific-popup.css"> <link rel="stylesheet"
-    href="css/animate.css"> -->
+    <link rel="stylesheet" href="css/transition-animations.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/main.css" type="text/css">
-    <link rel="stylesheet" href="css/transition-animations.css" type="text/css">
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
   </head>
@@ -63,12 +63,16 @@
                 <a class="pt-trigger" href="#about_me" data-animation="58" data-goto="1">About me</a>
                 <!-- href value = data-id without # of .pt-page -->
               </li>
+              <li>
+                <a class="pt-trigger" href="#portfolio" data-animation="58" data-goto="2">Portfolio</a>
+                <!-- href value = data-id without # of .pt-page -->
+              </li>
               <!-- /About Me Subpage link -->
               <li>
-                <a class="pt-trigger" href="#resume" data-animation="59" data-goto="2">Resume</a>
+                <a class="pt-trigger" href="#resume" data-animation="59" data-goto="3">Resume</a>
               </li>
               <li>
-                <a class="pt-trigger" href="#contact" data-animation="58" data-goto="3">Contact</a>
+                <a class="pt-trigger" href="#contact" data-animation="58" data-goto="4">Contact</a>
               </li>
             </ul>
             <!-- /Main menu -->
@@ -250,9 +254,231 @@
               <!-- End of Fun fucts block -->
             </section>
             <!-- End of About Me Subpage -->
+            <!-- Portfolio Subpage -->
+            <section class="pt-page pt-page-2" data-id="portfolio">
+              <div class="section-title-block">
+                <h2 class="section-title">Portfolio</h2>
+                <h5 class="section-description">My Best Works</h5>
+              </div>
 
+              <!-- Portfolio Content -->
+              <div class="portfolio-content">
+
+                <!-- Portfolio filter -->
+                <ul id="portfolio_filters" class="portfolio-filters">
+                  <li class="active">
+                    <a class="filter btn btn-sm btn-link active" data-group="all">All</a>
+                  </li>
+                  <li class="">
+                    <a class="filter btn btn-sm btn-link" data-group="media">Project</a>
+                  </li>
+                  <li class="">
+                    <a class="filter btn btn-sm btn-link" data-group="illustration">UX Design</a>
+                  </li>
+                  <li class="">
+                    <a class="filter btn btn-sm btn-link" data-group="video">A11ly</a>
+                  </li>
+                </ul>
+                <!-- End of Portfolio filter -->
+
+                <!-- Portfolio Grid -->
+                <div id="portfolio_grid" class="portfolio-grid portfolio-masonry masonry-grid-3 shuffle">
+
+                  <!-- Portfolio Item 1 -->
+                  <figure class="item shuffle-item filtered" data-groups="[&quot;all&quot;, &quot;media&quot;]">
+                    <a class="ajax-page-load" href="portfolio-1.html">
+                      <img src="images/portfolio/gel.png" alt="">
+                      <div>
+                        <h5 class="name">PageUp Design System</h5>
+                        <small>Design & Code</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 1 -->
+
+                  <!-- Portfolio Item 2 -->
+                  <figure class="item shuffle-item filtered" data-groups="[&quot;all&quot;, &quot;video&quot;]">
+                    <a href="https://www.youtube.com/watch?v=MQmyskjZ-lk&t=2s" title="Accessibility" class="lightbox mfp-iframe">
+                      <img src="images/portfolio/2.jpg" alt="">
+                      <div style="display: block; left: 0px; top: -100%; transition: all 300ms ease 0s;">
+                        <h5 class="name">Project Name</h5>
+                        <small>Video</small>
+                        <i class="fa fa-video-camera"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 2 -->
+
+                  <!-- Portfolio Item 3 -->
+                  <figure
+                    class="item shuffle-item filtered"
+                    data-groups="[&quot;all&quot;,&quot;illustration&quot;]"
+                    style="position: absolute; top: 0px; left: 0px; visibility: visible; transition: transform 450ms ease-out 0s, opacity 450ms ease-out 0s; opacity: 1; transform: translate3d(450px, 0px, 0px) scale3d(1, 1, 1);">
+                    <a href="images/portfolio/zoomin.png" class="lightbox" title="Duis Eu Eros Viverra">
+                      <img src="images/portfolio/zoomin.png" alt="">
+                      <div style="display: block; left: -100%; top: 0px; transition: all 300ms ease 0s;">
+                        <h5 class="name">Project Name</h5>
+                        <small>Illustration</small>
+                        <i class="fa fa-image"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 3 -->
+
+                  <!-- Portfolio Item 4 -->
+                  <figure
+                    class="item shuffle-item filtered"
+                    data-groups="[&quot;all&quot;, &quot;media&quot;]"
+                    style="position: absolute; top: 0px; left: 0px; visibility: visible; transition: transform 450ms ease-out 0s, opacity 450ms ease-out 0s; opacity: 1; transform: translate3d(675px, 0px, 0px) scale3d(1, 1, 1);">
+                    <a class="ajax-page-load" href="portfolio-1.html">
+                      <img src="images/portfolio/4.jpg" alt="">
+                      <div style="display: block; left: -100%; top: 0px; transition: all 300ms ease 0s;">
+                        <h5 class="name">Project Name</h5>
+                        <small>Media</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 4 -->
+
+                  <!-- Portfolio Item 5 -->
+                  <figure
+                    class="item shuffle-item filtered"
+                    data-groups="[&quot;all&quot;, &quot;illustration&quot;]"
+                    style="position: absolute; top: 0px; left: 0px; visibility: visible; transition: transform 450ms ease-out 0s, opacity 450ms ease-out 0s; opacity: 1; transform: translate3d(0px, 225px, 0px) scale3d(1, 1, 1);">
+                    <a href="images/portfolio/5.jpg" class="lightbox" title="Aliquam Condimentum Magna Rhoncus">
+                      <img src="images/portfolio/5.jpg" alt="">
+                      <div>
+                        <h5 class="name">Project Name</h5>
+                        <small>Illustration</small>
+                        <i class="fa fa-image"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 5 -->
+
+                  <!-- Portfolio Item 6 -->
+                  <figure
+                    class="item shuffle-item filtered"
+                    data-groups="[&quot;all&quot;, &quot;media&quot;]"
+                    style="position: absolute; top: 0px; left: 0px; visibility: visible; transition: transform 450ms ease-out 0s, opacity 450ms ease-out 0s; opacity: 1; transform: translate3d(225px, 225px, 0px) scale3d(1, 1, 1);">
+                    <a class="ajax-page-load" href="portfolio-1.html">
+                      <img src="images/portfolio/6.jpg" alt="">
+                      <div style="display: block; left: 0px; top: 100%; transition: all 300ms ease 0s;">
+                        <h5 class="name">Project Name</h5>
+                        <small>Media</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 6 -->
+
+                  <!-- Portfolio Item 7 -->
+                  <figure
+                    class="item shuffle-item filtered"
+                    data-groups="[&quot;all&quot;, &quot;video&quot;]"
+                    style="position: absolute; top: 0px; left: 0px; visibility: visible; transition: transform 450ms ease-out 0s, opacity 450ms ease-out 0s; opacity: 1; transform: translate3d(450px, 225px, 0px) scale3d(1, 1, 1);">
+                    <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Nulla Facilisi" class="lightbox mfp-iframe">
+                      <img src="images/portfolio/7.jpg" alt="">
+                      <div style="display: block; left: 0px; top: 100%; transition: all 300ms ease 0s;">
+                        <h5 class="name">Project Name</h5>
+                        <small>Video</small>
+                        <i class="fa fa-video-camera"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 7 -->
+
+                  <!-- Portfolio Item 8 -->
+                  <figure
+                    class="item shuffle-item filtered"
+                    data-groups="[&quot;all&quot;,  &quot;media&quot;]"
+                    style="position: absolute; top: 0px; left: 0px; visibility: visible; transition: transform 450ms ease-out 0s, opacity 450ms ease-out 0s; opacity: 1; transform: translate3d(675px, 225px, 0px) scale3d(1, 1, 1);">
+                    <a class="ajax-page-load" href="portfolio-1.html">
+                      <img src="images/portfolio/8.jpg" alt="">
+                      <div>
+                        <h5 class="name">Project Name</h5>
+                        <small>Media</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 8 -->
+
+                  <!-- Portfolio Item 9 -->
+                  <figure
+                    class="item shuffle-item filtered"
+                    data-groups="[&quot;all&quot;,&quot;illustration&quot;]"
+                    style="position: absolute; top: 0px; left: 0px; visibility: visible; transition: transform 450ms ease-out 0s, opacity 450ms ease-out 0s; opacity: 1; transform: translate3d(0px, 450px, 0px) scale3d(1, 1, 1);">
+                    <a href="images/portfolio/9.jpg" class="lightbox" title="Mauris Neque Dolor">
+                      <img src="images/portfolio/9.jpg" alt="">
+                      <div>
+                        <h5 class="name">Project Name</h5>
+                        <small>Illustration</small>
+                        <i class="fa fa-image"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 9 -->
+
+                  <!-- Portfolio Item 10 -->
+                  <figure
+                    class="item shuffle-item filtered"
+                    data-groups="[&quot;all&quot;, &quot;video&quot;]"
+                    style="position: absolute; top: 0px; left: 0px; visibility: visible; transition: transform 450ms ease-out 0s, opacity 450ms ease-out 0s; opacity: 1; transform: translate3d(225px, 450px, 0px) scale3d(1, 1, 1);">
+                    <a href="https://player.vimeo.com/video/97102654?autoplay=1" title="Donec Lectus Arcu" class="lightbox mfp-iframe">
+                      <img src="images/portfolio/10.jpg" alt="">
+                      <div style="display: block; left: 0px; top: -100%; transition: all 300ms ease 0s;">
+                        <h5 class="name">Project Name</h5>
+                        <small>Video</small>
+                        <i class="fa fa-video-camera"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 10 -->
+
+                  <!-- Portfolio Item 11 -->
+                  <figure
+                    class="item shuffle-item filtered"
+                    data-groups="[&quot;all&quot;,&quot;illustration&quot;]"
+                    style="position: absolute; top: 0px; left: 0px; visibility: visible; transition: transform 450ms ease-out 0s, opacity 450ms ease-out 0s; opacity: 1; transform: translate3d(450px, 450px, 0px) scale3d(1, 1, 1);">
+                    <a href="images/portfolio/11.jpg" class="lightbox" title="Duis Eu Eros Viverra">
+                      <img src="images/portfolio/11.jpg" alt="">
+                      <div style="display: block; left: 0px; top: -100%; transition: all 300ms ease 0s;">
+                        <h5 class="name">Project Name</h5>
+                        <small>Illustration</small>
+                        <i class="fa fa-image"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 11 -->
+
+                  <!-- Portfolio Item 12 -->
+                  <figure
+                    class="item shuffle-item filtered"
+                    data-groups="[&quot;all&quot;,&quot;media&quot;]"
+                    style="position: absolute; top: 0px; left: 0px; visibility: visible; transition: transform 450ms ease-out 0s, opacity 450ms ease-out 0s; opacity: 1; transform: translate3d(675px, 450px, 0px) scale3d(1, 1, 1);">
+                    <a class="ajax-page-load" href="portfolio-1.html">
+                      <img src="images/portfolio/12.jpg" alt="">
+                      <div>
+                        <h5 class="name">Project Name</h5>
+                        <small>Media</small>
+                        <i class="fa fa-file-text-o"></i>
+                      </div>
+                    </a>
+                  </figure>
+                  <!-- /Portfolio Item 12 -->
+                </div>
+                <!-- /Portfolio Grid -->
+
+              </div>
+              <!-- /Portfolio Content -->
+
+            </section>
+            <!-- End Portfolio Subpage -->
             <!-- Resume Subpage -->
-            <section class="pt-page pt-page-2" data-id="resume">
+            <section class="pt-page pt-page-3" data-id="resume">
               <div class="section-title-block">
                 <h4 class="section-title">Resume</h4>
                 <h5 class="section-description">12 Years of Experience</h5>
@@ -395,7 +621,7 @@
             <!-- End Resume Subpage -->
 
             <!-- Contact Subpage -->
-            <section class="pt-page pt-page-3" data-id="contact">
+            <section class="pt-page pt-page-4" data-id="contact">
               <div class="section-title-block">
                 <h2 class="section-title">Contact</h2>
                 <h5 class="section-description">Get in Touch</h5>
@@ -459,6 +685,13 @@
 
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
     <script src="js/page-transition.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/jquery.shuffle.min.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
     <script src="js/main.js"></script>
+
   </body>
 </html>
