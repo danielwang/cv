@@ -51,14 +51,14 @@
   // /Portfolio subpage filters
 
 
-  // // Hide Mobile menu
-  // function mobileMenuHide() {
-  //   var windowWidth = $(window).width();
-  //   if (windowWidth < 1024) {
-  //     $('.site-nav').addClass('mobile-menu-hide');
-  //   }
-  // }
-  // // /Hide Mobile menu
+  // Hide Mobile menu
+  function mobileMenuHide() {
+    var windowWidth = $(window).width();
+    if (windowWidth < 1024) {
+      $('.site-nav').addClass('mobile-menu-hide');
+    }
+  }
+  // /Hide Mobile menu
 
 
   $(document).ready(function() {
@@ -168,8 +168,8 @@
   });
 
   // Mobile menu hide on main menu item click
-  $('.site-main-menu').on("click", "a", function(e) {
-    mobileMenuHide();
-  });
+  // $('.site-main-menu').on("click", "a", function(e) {
+  //   mobileMenuHide();
+  // });
 
 })(jQuery);

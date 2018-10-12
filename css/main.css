@@ -552,10 +552,6 @@ ul.social-links li a i {
   line-height: 28px;
 }
 
-ul.social-links li a:hover i {
-  color: #fff;
-}
-
 ul.social-links li a:hover {
   color: #ffcd38;
 }
@@ -1126,6 +1122,8 @@ ul.social-links li:last-child a {
   position: relative;
   display: block;
   width: 100%;
+  border: 1px solid #ddd;
+  padding: 2px;
 }
 
 .portfolio-filters {
