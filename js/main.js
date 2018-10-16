@@ -52,12 +52,12 @@
 
 
   // Hide Mobile menu
-  function mobileMenuHide() {
-    var windowWidth = $(window).width();
-    if (windowWidth < 1024) {
-      $('.site-nav').addClass('mobile-menu-hide');
-    }
-  }
+  // function mobileMenuHide() {
+  //   var windowWidth = $(window).width();
+  //   if (windowWidth < 1024) {
+  //     $('.site-nav').addClass('mobile-menu-hide');
+  //   }
+  // }
   // /Hide Mobile menu
 
 
@@ -77,10 +77,6 @@
       $(this).hoverdir();
     });
 
-    // Mobile menu
-    $('.menu-toggle').click(function() {
-      $('.site-nav').toggleClass('mobile-menu-hide');
-    });
 
     // Testimonials Slider
     $(".testimonials.owl-carousel").owlCarousel({
@@ -163,9 +159,9 @@
   });
 
   // Mobile menu hide
-  $(window).on('resize', function() {
-    mobileMenuHide();
-  });
+  // $(window).on('resize', function() {
+  //   mobileMenuHide();
+  // });
 
   // Mobile menu hide on main menu item click
   // $('.site-main-menu').on("click", "a", function(e) {
