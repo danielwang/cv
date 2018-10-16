@@ -87,6 +87,10 @@ img {
   visibility: hidden;
 }
 
+.filter{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(75%);
+}
 /* Buttons */
 
 input[type=submit], input[type=button], button, a.button {
