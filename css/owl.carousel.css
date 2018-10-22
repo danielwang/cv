@@ -26,6 +26,7 @@
   .owl-carousel .owl-stage-outer {
     position: relative;
     overflow: hidden;
+    margin-top: 40px;
     /* fix for flashing background */
     -webkit-transform: translate3d(0px, 0px, 0px); }
   .owl-carousel .owl-item {
@@ -36,6 +37,7 @@
     -webkit-tap-highlight-color: transparent;
     -webkit-touch-callout: none; }
   .owl-carousel .owl-item img {
+    border-radius: 4px;
     display: block;
     width: 100%;
     -webkit-transform-style: preserve-3d; }
