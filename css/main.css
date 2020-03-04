@@ -68,7 +68,9 @@ p.lead {
   font-size: 18px;
   margin: 30px 0;
 }
-
+.mb-0{
+  margin-bottom: 0;
+}
 img {
   vertical-align: bottom;
   max-width: 100%;
@@ -494,7 +496,7 @@ textarea.form-control, textarea.form-control:focus {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.08)
+  background-color: rgba(0, 0, 0, 0.28)
 }
 
 .site-title-block {
@@ -665,7 +667,7 @@ ul.social-links li:last-child a {
   position: relative;
   margin: 0 0 0 -65px;
   padding: 10px 20px 10px 63px;
-  background-color: #ffcd38;
+  background-color: #d19605;
   color: #fff;
   line-height: 1.1em;
   font-weight: 500;
@@ -680,13 +682,13 @@ ul.social-links li:last-child a {
   bottom: 5px;
   left: -5px;
   content: "";
-  border: 1px solid #ebbd34;
+  border: 1px solid #d19605;;
   transform: skew(0deg, 65deg);
   -ms-transform: skew(0deg, 65deg);
   -webkit-transform: skew(0deg, 65deg);
   -o-transform: skew(0deg, 65deg);
   -moz-transform: skew(0deg, 65deg);
-  background: #ebbd34;
+  background:#d19605;
 }
 
 .section-description {
@@ -695,6 +697,7 @@ ul.social-links li:last-child a {
   color: #888;
   font-size: 14px;
   font-weight: 200;
+  letter-spacing: 1px;
 }
 
 .block-title h3 {
@@ -709,7 +712,7 @@ ul.social-links li:last-child a {
   width: 100%;
   height: 2px;
   margin-top: -1px;
-  background-color: #ffcd38;
+  background-color: #d19605;
 }
 
 /* =============================================================================
@@ -939,11 +942,7 @@ ul.social-links li:last-child a {
 .timeline-event {
   position: relative;
   padding-left: 25px;
-  padding-bottom: 15px;
-}
-
-.timeline-event:last-child {
-  padding-bottom: 0px;
+  margin-bottom: 15px;
 }
 
 .timeline-event>* {
@@ -1022,7 +1021,7 @@ ul.social-links li:last-child a {
 }
 
 .skill-percentage {
-  background-color: #ffcd38;
+  background-color:#FAC238;
   border: 2px solid #fff;
   -moz-border-radius: 9px;
   -webkit-border-radius: 9px;
